@@ -13,40 +13,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="primary-header">
+  <header class="primary-header flex">
     <div>
-      <img src="./images/logo.svg" alt="Logo">
+      <img src="./images/logo.svg" class="logo" alt="Logo">
     </div>
 
     <nav>
-      <ul id="primary-nav" class="primary-navigation">
+      <ul id="primary-nav" class="primary-navigation flex text-gray">
         <li class="dropdown-1">
-          <a href="#features"><img src="images/icon-arrow-down.svg" alt="An icon arrow down">Features</a>
-          <ul class="">
-            <li><a href="#"><img src="images/icon-todo.svg" alt="A to do list">Todo List</a></li>
-            <li><a href="#"><img src="images/icon-calendar.svg" alt="A calendar">Calendar</a></li>
-            <li><a href="#"><img src="images/icon-reminders.svg" alt="A reminder">Reminders</a></li>
-            <li><a href="#"><img src="images/icon-planning.svg" alt="A clock">Planning</a></li>
+          <a href="#features"><img src="images/icon-arrow-down.svg" class="icon-arrow" alt="An icon arrow down"><span class="text-gray fs-500">Features</span></a>
+          <ul class="dropdown-1-items">
+            <li><a href="#" class="dropdown-1-item"><img src="images/icon-todo.svg" alt="A to do list"><span class="text-gray">Todo List</span></a></li>
+            <li><a href="#" class="dropdown-1-item"><img src="images/icon-calendar.svg" alt="A calendar"><span class="text-gray">Calendar</span></a></li>
+            <li><a href="#" class="dropdown-1-item"><img src="images/icon-reminders.svg" alt="A reminder"><span class="text-gray">Reminders</span></a></li>
+            <li><a href="#" class="dropdown-1-item"><img src="images/icon-planning.svg" alt="A clock"><span class="text-gray">Planning</span></a></li>
           </ul>
         </li>
         <li class="dropdown-2">
-          <a href="#company"><img src="images/icon-arrow-down.svg" alt="An icon arrow down">Company</a>
-          <ul class="">
-            <li><a href="#">History</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Blog</a></li>
+          <a href="#company"><img src="images/icon-arrow-down.svg" class="icon-arrow" alt="An icon arrow down"><span class="text-gray">Company</span></a>
+          <ul class="dropdown-2-items">
+            <li><a href="#" class="dropdown-2-item text-gray">History</a></li>
+            <li><a href="#" class="dropdown-2-item text-gray">Our Team</a></li>
+            <li><a href="#" class="dropdown-2-item text-gray">Blog</a></li>
           </ul>
         </li>
         <li>
-          <a href="#careers">Careers</a>
+          <a href="#careers"><span class="text-gray">Careers</span></a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about"><span class="text-gray">About</span></a>
         </li>
       </ul>
 
-      <div class="login-items">
-        <div class="item"><a href="#">Login</a></div>
+      <div class="login-items flex">
+        <div class="item"><a href="#"><span class="text-gray">Login</span></a></div>
         <div class="register-button">Register</div>
       </div>
     </nav>
