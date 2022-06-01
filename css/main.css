@@ -155,9 +155,11 @@ select {
 
     .login-items {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: relative;
         top: 460px;
-        padding: 5rem 1rem;
+        padding: 6rem 1rem;
     }
 
     li.dropdown-1 a,
@@ -190,14 +192,22 @@ select {
         padding-bottom: 10px;
     }
 
-    .login-items {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 500px;
-        left: 75px;
+    .item {
+        margin-top: 20px;
+        font-size: 14px;
     }
+
+    .register-button {
+        width: 195px;
+        height: 42px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 9px;
+}
+
+
 }
 
 
