@@ -125,6 +125,10 @@ select {
     justify-content: flex-start;
 }
 
+.mobile-nav-toggle {
+    display: none;
+}
+
 .primary-navigation {
     list-style: none;
     padding: 0;
@@ -145,8 +149,23 @@ select {
 
 /* here it goes the using of max-width in order to avoid the overriding things too much*/
 @media (max-width: 35em) {
+
+    .dark-overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed; 
+        z-index: 1; 
+        right: 0;
+        top: 0;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.65);
+        overflow-x: hidden; 
+        transition: 0.5s; 
+    }
+
     .primary-navigation {
         position: fixed;
+        z-index: 1000;
         inset: 0 0 0 30%;
         flex-direction: column;
         padding: min(30vh, 5rem) 1em;
@@ -157,6 +176,7 @@ select {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        z-index: 9999;
         position: relative;
         top: 460px;
         padding: 6rem 1rem;
@@ -205,7 +225,30 @@ select {
         font-size: 14px;
         text-align: center;
         padding-top: 9px;
-}
+        cursor-pointer;
+    }
+
+    .register-button:hover {
+        border: 1px solid black;
+        color: black;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: url(../images/icon-menu.svg);
+        background-repeat: no-repeat;
+        border: 0;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    
+
+
 
 
 }
