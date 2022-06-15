@@ -41,7 +41,25 @@ body {
     color: hsl( var(--clr-gray) );
     line-height: 1.5;
     min-height: 100vh; 
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    position: relative;
+}
+
+body .dark-overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: hsla(0, 0%, 8%, 0.5);
+    transition: all .3s linear;
+}
+
+body.nav-open .dark-overlay {
+    display: initial;
+    opacity: 1;
 }
 
 /* make images easier to work with */
@@ -87,17 +105,6 @@ select {
     max-width: 80rem;
 }
 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 0;
-}
 
 /* colors */
 .bg-white { background-color: hsl( var(--clr-white) );}
@@ -118,19 +125,123 @@ select {
 /* --------------------- */
 
 /* primary header*/
-.logo {
-    margin: 2rem;
+.primary-header {
+    min-height: 75px;
+    padding: 1.3rem 1rem;
+    display: flex;
+    align-items: center;
 }
 
-.primary-header {
-    justify-content: flex-start;
+.primary-header .menu {
+    position: fixed;
+    top: 1.3rem;
+    right: 1rem;
+    z-index: 2;
+    cursor: pointer;
 }
+
+.menu .close-menu{
+    display: none;
+}
+
+header.open .open-menu{
+    display: none;
+}
+
+header.open .close-menu{
+    display: initial;
+}
+
+/* primary navigation*/
 
 .primary-navigation {
-    list-style: none;
     padding: 0;
     margin: 0;
 }
+
+ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65vw;
+    height: 100vh;
+    background: white;
+    /*transform: translateX(100%);*/
+    transition: all .3s ease-in;
+    text-align: left;
+    z-index: 1;
+}
+
+/*header.open nav {
+    transform: translateX(0%);
+}*/
+
+nav .primary-navigation {
+    margin-top: 75px;
+    flex: 1;
+}
+
+.primary-navigation .nav-link {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-link > a {
+    width: 100%;
+    padding: .5rem 1.5rem;
+    display: block;
+    transition: all .3s ease-in;
+}
+
+.nav-link > a:hover {
+    background: hsla(0, 0%, 88%, 0.5);
+}
+
+.nav-link .dropdown-list {
+    display: none;
+    padding: .5rem 1.5rem;
+    overflow-y: hidden;
+}
+
+.dropdown-list .dropdown-item a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 1.5rem;
+}
+
+.dropdown-item a:hover{
+    background: hsla(0, 0%, 78%,.5);
+}
+
+.nav-link a span{
+    margin-right: .75rem;
+}
+
+.nav-link .arrow-up{
+    display: none;
+}
+
+.nav-link.link-open .arrow-up{
+    display: initial;
+}
+
+.nav-link.link-open .arrow-down{
+    display: none;
+}
+
+nav .login-items{
+    display: none;
+}
+
 
 
 
