@@ -40,7 +40,8 @@ body {
     font-size: var(--fs-500);
     color: hsl( var(--clr-gray) );
     line-height: 1.5;
-    min-height: 100vh;  
+    min-height: 100vh; 
+    overflow-x: hidden; 
 }
 
 /* make images easier to work with */
@@ -125,132 +126,10 @@ select {
     justify-content: flex-start;
 }
 
-.mobile-nav-toggle {
-    display: none;
-}
-
 .primary-navigation {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.primary-navigation a,
-.dropdown-1-items a,
-.dropdown-2-items a,
-.item a {
-    text-decoration: none;
-}
-
-.dropdown-1-items,
-.dropdown-2-items {
-    list-style: none;
-}
-
-/* here it goes the using of max-width in order to avoid the overriding things too much*/
-@media (max-width: 35em) {
-
-    .dark-overlay {
-        height: 100%;
-        width: 100%;
-        position: fixed; 
-        z-index: 1; 
-        right: 0;
-        top: 0;
-        display: none;
-        background-color: rgba(0, 0, 0, 0.65);
-        overflow-x: hidden; 
-        transition: 0.5s; 
-    }
-
-    .primary-navigation {
-        position: fixed;
-        z-index: 1000;
-        inset: 0 0 0 30%;
-        flex-direction: column;
-        padding: min(30vh, 5rem) 1em;
-        background: #fff;
-    }
-
-    .login-items {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        position: relative;
-        top: 460px;
-        padding: 6rem 1rem;
-    }
-
-    li.dropdown-1 a,
-    li.dropdown-2 a{
-        padding: 0.5rem 0;
-        transition: 0.3s;
-    }
-
-    img.icon-arrow {
-        position: relative;
-        left: 5rem;
-        top: 15px;
-        padding-left: 9px;
-    }
-
-    .dropdown-1-item {
-        display: flex;
-        align-items: center;
-    }
-
-    .dropdown-1-item img {
-        padding-right: 0.5rem;
-    }
-
-    .dropdown-2-items {
-        padding-top: 10px;
-    }
-
-    .dropdown-2-items li {
-        padding-bottom: 10px;
-    }
-
-    .item {
-        margin-top: 20px;
-        font-size: 14px;
-    }
-
-    .register-button {
-        width: 195px;
-        height: 42px;
-        border: 1px solid gray;
-        border-radius: 10px;
-        font-size: 14px;
-        text-align: center;
-        padding-top: 9px;
-        cursor-pointer;
-    }
-
-    .register-button:hover {
-        border: 1px solid black;
-        color: black;
-    }
-
-    .mobile-nav-toggle {
-        display: block;
-        position: absolute;
-        z-index: 9999;
-        background: url(../images/icon-menu.svg);
-        background-repeat: no-repeat;
-        border: 0;
-        width: 2rem;
-        aspect-ratio: 1;
-        top: 2rem;
-        right: 2rem;
-    }
-
-    
-
-
-
-
 }
 
 
