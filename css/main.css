@@ -302,6 +302,83 @@ footer a {
     color:hsl( var(--clr-black) );
 }
 
+@media only screen and (min-width: 768px) {
+    /* Tablet styles here */
+    body {
+        background:hsl( var(--clr-white) );
+    }
+
+    .dark-overlay {
+        display: none;
+        opacity: 0;
+    }
+
+    .primary-header {
+        padding: 1.5rem 3rem;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-top: .5rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav {
+        position: initial;
+        margin: 0 2rem;
+        max-width: 80vw;
+        height: auto;
+        background: transparent;
+        flex: 3;
+        align-items: center;
+        transform: translate(0%);
+    }
+
+    nav .primary-navigation {
+        display: flex;
+        flex: 3;
+        margin-top: 0;
+    }
+
+    .nav-link {
+        text-align: right;
+        margin: 0 1rem;
+    }
+
+    .nav-link > a {
+        padding: 0;
+    }
+
+    .nav-link > a:hover {
+        color: hsl( var(--clr-black) );
+        background: transparent;
+        transform: translateY(-1px);
+    }
+
+    .nav-link > a:active{
+        transform: scale(1.2);
+    }
+
+    .nav-link a span{
+        margin-right: .5rem;
+    }
+
+    .nav-link .dropdown-list {
+        position: absolute;
+        top: calc(100% + 1rem);
+        right: 0;
+        width: max-content;
+        background-color: white;
+        box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
+        padding: 1rem 0;
+        border-radius: .5rem;
+    }
+
+}
+
 
 
 
