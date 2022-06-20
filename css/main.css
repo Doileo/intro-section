@@ -377,7 +377,41 @@ footer a {
         border-radius: .5rem;
     }
 
+    nav .login-items {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+    }
+
+    .login-items .item,
+    .login-items .register-button {
+        color: hsl( var(--clr-gray) );
+        background: transparent;
+        padding: .5rem 1rem;
+        margin: 0 .5rem;
+        border: .1rem solid gray;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: all .3s ease-in;
+    }
+
+    .login-items .item:hover,
+    .login-items .register-button:hover {
+        color: hsl( var(--clr-black) );
+        border: .1rem solid black;
+        transform: translateY(-1px);
+    }
+
+    .login-items .item:active,
+    .login-items .register-button:active {
+        transform: scale(1.2);
+    }
+
+    .login-items .item {
+        border: none
+    }
 }
+
 
 
 
