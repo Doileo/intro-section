@@ -270,13 +270,20 @@ nav .login-items{
 .button {
     position: relative;
     left: 130px;
-    background: hsl( var(--clr-black) );
+    color:hsl( var(--clr-black) );
+    background:hsl( var(--clr-white) );
+    font-weight: 700;
     padding: 1rem;
     width: 138px;
-    border: none;
+    border: 1px solid black;
     border-radius: 1rem;
     cursor: pointer;
     transition: .5s all linear;
+}
+
+.button:hover {
+    color:hsl( var(--clr-black) );
+    background: transparent;
 }
 
 .clients {
@@ -302,7 +309,7 @@ footer a {
     color:hsl( var(--clr-black) );
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
     /* Tablet styles here */
     body {
         background:hsl( var(--clr-white) );
@@ -340,7 +347,7 @@ footer a {
     nav .primary-navigation {
         display: flex;
         flex: 3;
-        margin-top: 0;
+        margin-top: 3rem;
     }
 
     .nav-link {
@@ -366,6 +373,10 @@ footer a {
         margin-right: .5rem;
     }
 
+    .arrow-down {
+        display: inline-block;
+    }
+
     .nav-link .dropdown-list {
         position: absolute;
         top: calc(100% + 1rem);
@@ -381,6 +392,8 @@ footer a {
         display: flex;
         justify-content: flex-end;
         flex: 1;
+        position: relative;
+        top: -35px;
     }
 
     .login-items .item,
@@ -409,6 +422,62 @@ footer a {
 
     .login-items .item {
         border: none
+    }
+
+    /* main content */
+    .main-content {
+        grid-template-columns: 2fr minmax(auto, 40%);
+        grid-template-rows: 0;
+        gap: 2rem;
+        margin: 0 8rem 5rem 10rem;
+    }
+
+    main picture {
+        order: 1;
+    }
+
+    .content-details {
+        width: 540px;
+        position: relative;
+        top: 5rem;
+    }
+
+    .title{
+        font-size: 5rem;
+        line-height:5rem;
+        letter-spacing: -1.11px;
+        text-align: left;
+        padding-bottom: 3rem;
+    }
+
+    .description {
+        line-height: 1.75rem;
+        text-align: left;
+    }
+
+    .button {
+        position: relative;
+        top: 520px;
+        left: -675px;
+        border-radius: 15px;
+        width: 163px;
+        padding-bottom: 2.5rem;;
+        transition: all .3s linear;
+        cursor:default;
+    }
+
+    .button:active {
+        transform: scale(1.1);
+    }
+
+    .clients {
+        position: relative;
+        top: 310px;
+        left: -40px;
+    }
+
+    .clients img {
+        cursor: text;
     }
 }
 
