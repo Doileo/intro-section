@@ -275,8 +275,8 @@ nav .login-items{
 
 .button {
     margin: 0 auto;
-    color: white;
-    background: black;
+    color: hsl( var(--clr-white) );
+    background: hsl( var(--clr-black) );
     font-weight: 700;
     padding: 0.7rem 0.8rem;
     width: 138px;
@@ -287,7 +287,7 @@ nav .login-items{
 }
 
 .button:hover {
-    color: black;
+    color: hsl( var(--clr-black) );
     background: transparent;
 }
 
@@ -472,7 +472,7 @@ footer a {
     }
 
     .button:hover {
-        color: black;
+        color: hsl( var(--clr-black) );
         background: transparent;
     }
 
