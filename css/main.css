@@ -448,11 +448,11 @@ footer a {
     }
 
     .title{
-        font-size: 5rem;
+        font-size: 4rem;
         line-height:5rem;
         letter-spacing: -1.11px;
         text-align: left;
-        padding-bottom: 3rem;
+        padding-bottom: 1.5rem;
     }
 
     .description {
@@ -461,16 +461,22 @@ footer a {
     }
 
     .button {
-        position: relative;
-        top: 520px;
-        left: -675px;
         margin: 0;
-        border-radius: 15px;
+        position: relative;
+        top: 430px;
+        left: -675px;
+        color: hsl( var(--clr-white) );
+        background: hsl( var(--clr-black) );
+        font-weight: 700;
+        padding-bottom: 2.5rem;
         width: 163px;
-        padding-bottom: 2.5rem;;
-        transition: all .3s linear;
+        border: 1px solid black;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: .5s all linear;
+        z-index: 3;
     }
-
+    
     .button:hover {
         color: hsl( var(--clr-black) );
         background: transparent;
