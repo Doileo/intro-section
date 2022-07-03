@@ -182,7 +182,6 @@ nav {
     background: white;
     transform: translateX(100%);
     transition: all .3s ease-in;
-    display: flex;
     text-align: left;
     z-index: 1;
 }
@@ -250,7 +249,24 @@ nav .primary-navigation {
 }
 
 nav .login-items{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.login-items .register-button {
+    color: hsl( var(--clr-gray) );
+    background: transparent;
+    padding: .5rem 1rem;
+    margin: 0 .5rem;
+    width: 164px;
+    text-align: center;
+    border: .1rem solid gray;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
 }
 
 /* Main content */
@@ -346,6 +362,7 @@ footer a {
         height: auto;
         background: transparent;
         flex: 3;
+        display: flex;
         align-items: center;
         transform: translate(0%);
     }
@@ -396,8 +413,10 @@ footer a {
 
     nav .login-items {
         display: flex;
+        flex-direction: row;
         justify-content: flex-end;
         flex: 1;
+        padding-top: 0.5rem;
     }
 
     .login-items .item,
