@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-grid-and-flexbox-wmG24Mp6i8)
+- Live Site URL: (https://doileo.github.io/intro-section/)
 
 ## My process
 
@@ -69,6 +69,6 @@ For the future projects I will continue to focus on getting used with using the 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Doina](https://doileo.github.io/portfolio/)
+- Frontend Mentor - [@Doileo](https://www.frontendmentor.io/profile/Doileo)
+- Twitter - [DLeovchin](https://twitter.com/DLeovchin)
